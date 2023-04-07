@@ -39,12 +39,10 @@ int SumRows(int[,] arr)
     {
       sum = sum + arr[i, j];
     }
-    //Console.WriteLine($"индекс строки {i} sum = {sum}");
     if (sum < minsum)
     {
       minsum = sum;
       posminsum = i;
-      //Console.WriteLine($"минимальная сумма {minsum} на строке {posminsum}");
     }
   }
   return posminsum;
